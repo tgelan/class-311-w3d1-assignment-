@@ -1,0 +1,22 @@
+<script>
+
+    function a(x, y) {
+        let n = x - y; // n=-1
+        let m = x + y; // 7
+        return b(n, m);
+    }
+    function b(x, y) {
+        let something = x / 2; // -1/2
+        let other = y + 3;  // 10
+        let stuff = c(something + other);  // c(9.5);
+        return (stuff + something) / other;
+    }
+    function c(n) {
+        let m = n * 3; // 28.5
+        debugger;
+        // what does the stack look like here?
+        return m - 1;
+    }
+    console.log(a(3, 4)); // 2.71
+
+</script>

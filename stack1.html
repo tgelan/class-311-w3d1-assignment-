@@ -1,0 +1,43 @@
+<script>
+//     function Stack() {
+//         this.storage = [];
+//     }
+//     Stack.prototype.push = function (element) {
+//         this.storage.push(element);
+//     };
+//     Stack.prototype.pop = function () {
+//         return this.storage.pop();
+//     };
+//     Stack.prototype.peek = function () {
+//         return this.storage[this.storage.length - 1];
+//     };
+//     Stack.prototype.size = function () {
+//         return this.storage.length;
+//     };
+
+// let stack = new Stack();
+// stack.push("a");
+// stack.push("b");
+// stack.push("c");
+// stack.storage.splice(1,1);
+// console.log("peek = "+stack.peek());
+// console.log(stack.storage.length);
+
+"use strict";
+function a(num) {
+    let x = 5;
+    let y = num + 3;//4
+    return b(y, x + 1);
+}
+function b(x, y) {
+    let num = c(x / 2);
+    let other = y * 2;
+    return other - num;
+}
+function c(thing) {
+    /* what is on the call stack at this point ? */
+   debugger;
+    return thing - 1;
+}
+console.log(a(1) - 2);
+</script>
